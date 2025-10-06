@@ -5,7 +5,7 @@ import { pages } from '../content/pages';
 export default function HomePage() {
   return (
     <div>
-      <Hero title="Understanding Leiomyosarcoma" subtitle="A structured guide to symptoms, diagnosis, staging, and treatment options." />
+      <Hero title="Understanding LMS" subtitle="A structured guide to symptoms, diagnosis, staging, and treatment options." />
       <div className="content">
         <div className="section">
           <h2>Explore Topics</h2>
