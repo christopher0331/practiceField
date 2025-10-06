@@ -1,7 +1,7 @@
 export type PageDef = { slug: string; title: string; summary: string };
 
 export const pages: PageDef[] = [
-  { slug: 'overview', title: 'Overview', summary: 'What leiomyosarcoma is and who it affects.' },
+  { slug: 'overview', title: 'General Knowledge', summary: 'What leiomyosarcoma is and who it affects.' },
   { slug: 'symptoms', title: 'Symptoms', summary: 'Common signs and when to see a doctor.' },
   { slug: 'diagnosis', title: 'Diagnosis', summary: 'Imaging, biopsy, and pathology basics.' },
   { slug: 'staging', title: 'Staging', summary: 'How stage and grade are determined.' },

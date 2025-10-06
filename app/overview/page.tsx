@@ -3,13 +3,13 @@ import Sidebar from '../../components/Sidebar';
 import ContentSection from '../../components/ContentSection';
 import { pages } from '../../content/pages';
 
-export const metadata = { title: 'Overview | Leiomyosarcoma Portal' };
+export const metadata = { title: 'General Knowledge | Leiomyosarcoma Portal' };
 
 export default function Page() {
   const nav = pages.map(p => ({ href: `/${p.slug}`, label: p.title }));
   return (
     <div>
-      <Hero title="Overview" subtitle="Leiomyosarcoma (LMS) is a rare cancer that arises from smooth muscle cells." />
+      <Hero title="General Knowledge" subtitle="Leiomyosarcoma (LMS) is a rare cancer that arises from smooth muscle cells." />
       <div className="layout">
         <Sidebar items={nav} />
         <article className="content">
