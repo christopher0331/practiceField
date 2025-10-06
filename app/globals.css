@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: #0f172a; background: #f8fafc; }
+a { color: #0ea5e9; text-decoration: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+header.site-header { background: white; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 40; }
+footer.site-footer { background: #0f172a; color: #e2e8f0; padding: 2rem 1rem; margin-top: 3rem; }
+.hero { background: radial-gradient(1200px 600px at 20% -20%, #e0f2fe 0%, transparent 60%), url('/hero-bg.svg'); background-repeat: no-repeat; background-size: cover; padding: 4rem 1rem; }
+.hero h1 { margin: 0 0 0.5rem; font-size: 2.25rem; }
+.layout { display: grid; grid-template-columns: 280px 1fr; gap: 2rem; }
+.sidebar { position: sticky; top: 72px; align-self: start; background: white; border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 1rem; }
+.sidebar a { display: block; padding: 0.4rem 0.25rem; border-radius: 0.25rem; color: #334155; }
+.sidebar a:hover { background: #f1f5f9; }
+.content { background: white; border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 1.25rem; }
+.section { margin: 1.5rem 0; }
+.section h2 { margin: 0 0 0.5rem; font-size: 1.5rem; }
+.megamenu { display: flex; gap: 1rem; align-items: center; justify-content: space-between; }
+.megamenu .brand { font-weight: 700; color: #0f172a; }
+.navbar { display: flex; gap: 1rem; }
+.navgroup { position: relative; }
+.navgroup:hover .panel { display: grid; }
+.panel { display: none; position: absolute; top: 100%; left: 0; background: white; border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 1rem; grid-template-columns: repeat(2, minmax(180px, 1fr)); gap: 0.75rem 2rem; min-width: 420px; }
+.panel a { color: #0f172a; }
+.search { flex: 1; display: flex; justify-content: flex-end; }
+.search input { width: 280px; max-width: 40vw; border: 1px solid #cbd5e1; border-radius: 999px; padding: 0.5rem 0.75rem; }
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; order: 2; }
+}
